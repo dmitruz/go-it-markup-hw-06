@@ -823,3 +823,18 @@ text-decoration: none;
    visibility: hidden;
    pointer-events: none;
 }
+/* make form styles*/
+
+.form-text {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #212121;
+   margin-top: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+}

@@ -417,11 +417,22 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
+        <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+            <label for="name">Имя</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="tel">Телефон</label><br>
+            <input type="text" name="tel" id="tel"><br>
+            <label for="mail">Почта</label><br>
+            <input type="email" name="mail" id="mail"><br>
+            <label for="massage">Коментарий</label><br>
+            <textarea name="massage" rows="20" cols="30"></textarea><br>
+             <button type="button" class="close-btn" data-modal-close>
             <svg class="close" width= "30px" height= "30px">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
+        </form>
        </div>
 </div>
 <script src="./js/modal.js"></script>
