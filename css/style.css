@@ -838,3 +838,14 @@ text-decoration: none;
    margin-left: 40px;
    margin-right: 40px;
 }
+.forma {
+   margin: 0 auto;
+   width: 448px;
+   height: 342px;
+   background-color: #fff;
+
+}
+.form-group {
+   
+   padding: 30px;
+}
