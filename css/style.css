@@ -860,8 +860,9 @@ text-decoration: none;
 }
 .input {
    margin-top: 10px;
-    width: 448px;
+    width: 100%;
     height: 40px;
+    border: 1px solid #303030;
    border-radius: 4px;
 }
 .textarea {
@@ -901,10 +902,10 @@ input[type="checkbox"] {
    line-height: 1.8;
    align-items: center;
    letter-spacing: 0.06em;
+   padding:  10px 20px;
    margin-top: 30px;
    margin-bottom: 30px;
-   display: flex;
-   justify-content: center;
+   display: block;
   width: 200px;
   height: 50px;
   background: #188CE8;
