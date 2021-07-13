@@ -840,12 +840,37 @@ text-decoration: none;
 }
 .forma {
    margin: 0 auto;
-   width: 448px;
-   height: 342px;
+   width: 528px;
+   height: 580px;
    background-color: #fff;
 
 }
 .form-group {
    
-   padding: 30px;
+   margin: 30px;
+}
+.label {
+   margin-left: 0 auto;
+}
+.input {
+   margin-top: 10px;
+    width: 448px;
+   border-radius: 4px;
+}
+.textarea {
+   margin-top: 10px;
+   width: 448px;
+   border-radius: 4px;
+}
+.checkbox {
+   margin: 0 auto;
+   width: 423px;
+}
+.blue-link-text {
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+   text-decoration-line: underline;
+   color: #2196f3;
 }
