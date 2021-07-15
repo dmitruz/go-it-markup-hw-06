@@ -1047,6 +1047,23 @@ input[type="checkbox"] {
 width: 20px;
 height: 20px;
 }
+.checkbox:checked + .checkbox-label::before {
+   background-color: #2196F3;
+  
+}
+.checkbox:focus + .checkbox-label::before {
+   outline: 2px solid #2196F3;
+}
+.visually-hidden {
+   position: absolute;
+   clip: rect(1px 1px 1px 1px);
+   clip: rect(1px, 1px, 1px, 1px);
+   padding: 0 !important;
+   border: 0 !important;
+   height: 1px !important;
+   width: 1px !important;
+   overflow: hidden;
+}
 /*
 .checkbox {
    display: inline-flex;
@@ -1066,6 +1083,7 @@ height: 20px;
    width: 18px;
    height: 18px;
    border: 1px solid #212121;
+   margin-right: 10px;
 }
 .check {
 display: inline-block;
