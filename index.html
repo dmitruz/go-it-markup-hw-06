@@ -426,22 +426,22 @@
             </button>
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
             <label class="label"><span class="label-name">Имя</span><span class="label-wrap">
-            <input type="name"  class="contact-form-input" placeholder="" required minlenght="2">
-            <svg class="user" width= "12px" height="12px">
+            <input type="text"  name="name" required class="contact-form-input">
+            <svg class="user" width= "18px" height="18px">
                 <use href="./images/form.svg#icon-id"></use>
            </svg>
            </span>
            </label>
             <label class="label"><span class="label-name">Телефон</span><span class="label-wrap">
-            <input type="tel" reguired class="contact-form-input" placeholder="" required pattern="[0-9{3}]">
-            <svg class="form-tel" width= "16 px" height="16px">
+            <input type="tel" reguired class="contact-form-input">
+            <svg class="form-tel" width= "18px" height="18px">
                 <use href="./images/form.svg#icon-phoneblack"></use>
                     </svg> 
                 </span>
                 </label>
             <label class="label"><span class="label-name">Почта</span><span class="label-wrap">
-            <input type="mail" required class="contact-form-input"placeholder="">
-            <svg class="form-mail" width="16px" height="16px">
+            <input type="mail" required class="contact-form-input">
+            <svg class="form-mail" width="18px" height="18px">
                 <use href="./images/form.svg#icon-envel"></use>
                     </svg>
                     </span>
@@ -449,13 +449,15 @@
             
                     <label class="label" for="massage">Коментарий</label>
                     <textarea class="textarea" name="massage" id="massage" cols="30" rows="8" placeholder="Введите текст"></textarea>
-                    <label for="checkbox" class="checkbox-label">          
-                         <input type="checkbox" id="checkbox" required class="checkbox"><span class="checkbox-policy">
+                    <input type="checkbox" name="policy" id="accept-policy" required class="checkbox">
+                    <label for="accept-policy" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href= "#" class="accept">  Условия договора</a></label>
+                    <!---- <span class="checkbox-policy">
                              <svg class="check" width= "11px" height="8px">
 
                         <use href="./images/form.svg#icon-checkbox"></use>
                              </svg>
-                             Соглашаюсь с рассылкой и принимаю </span> <span class="blue-link-text"><a href=#"">Условия договора</a></span></label>
+                             </span>
+                            <p class="policy-text"> Соглашаюсь с рассылкой и принимаю <a href= "#" class="accept">  Условия договора</a></p></label>-->
             <button type="submit" class="contact-form-submit">Отправить</button>
            <!---- <div class="form-group">
                 <label class="label" for="name">Имя</label>
