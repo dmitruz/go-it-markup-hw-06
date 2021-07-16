@@ -613,7 +613,56 @@ text-decoration: none;
 .footer-icon-list:focus {
    background: var(--color-link-title);
 }
-
+.footer-subscribe {
+   margin-left: 98px;
+}
+.subscribe-title {
+   margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.subscribe-form {
+   display: flex;
+}
+.subscribe-email {
+   width: 358px;
+   margin-right: 12px;
+   padding: 15px 16px;
+   background-color: transparent;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   box-sizing: border-box;
+   border-radius: 4px;
+   font-size: 16px;
+   line-height: 1.25;
+   color: #fff; 
+}
+.subscribe-btn {
+   display: inline-flex;
+   color: #fff;
+   background-color: #2196F3;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.8;
+   border: none;
+   box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+   transition: background-color 250ms linear;
+   border-radius: 4px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    cursor: pointer;
+}
+.icon-send {
+   width: 24px;
+    height: 24px;
+    margin-left: 10px;
+   fill: #fff;
+}
 /*Portfolio styles*/
 
 
@@ -969,20 +1018,20 @@ input[type="checkbox"] {
    outline: none;
 }
 .contact-form-input:focus + .form-tel {
-   background-color: #2196F3;
    transition: border-color 250ms, linear; 
+   fill: #2196F3;
 }
 .contact-form-input:focus + .user {
-   background-color: #2196F3;
-   transition: border-color 250ms, linear; 
+    transition: border-color 250ms, linear; 
+    fill: #2196F3;
 }
 .contact-form-input:focus + .form-mail {
-   background-color: #2196F3;
    transition: border-color 250ms, linear; 
+   fill: #2196F3;
 }
 .contact-form-input:focus + .check {
-   background-color: #2196F3;
    transition: border-color 250ms, linear; 
+   
 }
 /*
 .contact-form-input {
@@ -1042,17 +1091,22 @@ input[type="checkbox"] {
     align-items: center;
     font-size: 14px;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 .checkbox:checked {
-width: 20px;
-height: 20px;
+margin-left: 10px;
+width: 16px;
+height: 15px;
+
 }
 .checkbox:checked + .checkbox-label::before {
-   background-color: #2196F3;
+   background-image: url(../images/symbol-defs.svg#icon-icon-check-1);
+   background-size: contain;
+   background-origin: border-box;
   
 }
 .checkbox:focus + .checkbox-label::before {
-   outline: 2px solid #2196F3;
+   outline: 1px solid #212121;
 }
 .visually-hidden {
    position: absolute;
@@ -1080,8 +1134,8 @@ height: 20px;
 .checkbox-label::before {
    display: block;
    content:"";
-   width: 18px;
-   height: 18px;
+   width: 16px;
+   height: 15px;
    border: 1px solid #212121;
    margin-right: 10px;
 }
