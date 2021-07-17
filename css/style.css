@@ -1101,15 +1101,14 @@ height: 15px;
 }
 .checkbox:checked + .checkbox-label::before {
    background-color: #2196F3
-   background-image: url:(./images/icon-checkbox.svg);
+ 
   background-size: cover;
    
   
 }
 .checkbox:focus + .checkbox-label::before {
    outline: 1px solid #212121;
-   background-image: url(./images/icon-check.svg);
-}
+   
 .visually-hidden {
    position: absolute;
    clip: rect(1px 1px 1px 1px);
