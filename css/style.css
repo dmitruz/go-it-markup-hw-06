@@ -919,9 +919,13 @@ text-decoration: none;
 
 .contact-form-input:focus + .form-tel {
    transition: border-color 250ms, linear; 
+   fill: #2196F3; 
+}
+.contact-form-input:hover + .form-tel {
+   transition: border-color 250ms, linear; 
    fill: #2196F3;
 }
-.comtacr-form-input:hover, .contact-form-input:focus  {
+.contact-form-input:hover, .contact-form-input:focus  {
    border-color: #2196f3;
 }
 
@@ -933,14 +937,18 @@ text-decoration: none;
    transition: border-color 250ms, linear; 
    fill: #2196F3;
 }
+
+
 .contact-form-input:focus + .form-mail {
    transition: border-color 250ms, linear; 
    fill: #2196F3;
 }
-.contact-form-input:focus + .check {
+.contact-form-input:hover + .form-mail {
    transition: border-color 250ms, linear; 
+   fill: #2196F3;
    
 }
+
 
 .label-wrap {
    position: relative;
@@ -982,7 +990,12 @@ text-decoration: none;
    border: 1px solid rgba(33, 33, 33, 0.2);
    resize: none;
 }
-.textares:hover, .textarea:focus {
+.textares:hover {
+   outline: none;
+   border-color: #2196F3;
+   transition: border-color 250ms, linear; 
+}
+.textarea:focus {
    outline: none;
    border-color: #2196F3;
    transition: border-color 250ms, linear; 
@@ -1002,7 +1015,7 @@ height: 15px;
 }
 .checkbox:checked + .checkbox-label::before {
   background-size: cover;
-  background-image: url(./images/icon-check.svg);
+  background-image: url(./images/iconcheck.svg);
  
 }
 .checkbox:focus + .checkbox-label::before {
