@@ -1108,7 +1108,7 @@ height: 15px;
 }
 .checkbox:focus + .checkbox-label::before {
    outline: 1px solid #212121;
-   background-color:darkgreen;
+   background-image: url(./images/icon-check.svg);
 }
 .visually-hidden {
    position: absolute;
