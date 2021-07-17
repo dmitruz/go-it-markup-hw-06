@@ -1101,7 +1101,7 @@ height: 15px;
 }
 .checkbox:checked + .checkbox-label::before {
    background-color: #2196F3
- 
+
   background-size: cover;
    
   
