@@ -1103,10 +1103,10 @@ height: 15px;
    background-color: #2196F3;
   background-size: cover;
    
-  
 }
 .checkbox:focus + .checkbox-label::before {
    outline: 1px solid #212121;
+   
 }
 .visually-hidden {
    position: absolute;
