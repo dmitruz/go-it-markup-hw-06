@@ -546,6 +546,9 @@ text-decoration: none;
    display: flex;
    align-items: baseline;
 }
+.footer-wrapper {
+   display: flex;
+}
  .footer-item-list:not(:last-child) {
    margin-bottom: 9px;
  }
@@ -655,6 +658,7 @@ text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
+    padding-right: 22px;
     cursor: pointer;
 }
 .icon-send {
@@ -828,8 +832,13 @@ text-decoration: none;
  }
 
 .close {
-   background-color: #fff;
+  
    fill: #212121;  
+   width: 11px;
+   height: 11px;
+}
+.close-btn:hover>.close, .close-btn:hover:focus>.close {
+   fill: #2196F3;
 }
 .backdrop {
    position: fixed;
@@ -846,14 +855,16 @@ text-decoration: none;
 }
 
 .modal {
-   width: 528px;
-   height: 580px;
    position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   background-color: #fff;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
 }
+ 
 .close-btn {
    position: absolute;
    top: 8px;
@@ -864,7 +875,9 @@ text-decoration: none;
    border: 1px solid rgba(0, 0, 0, 0.1);
    cursor: pointer;
    background-color: transparent;
-   padding: 0;
+   justify-content: center;
+    align-items: center;
+  
 }
 .is-hidden {
    opacity: 0;
@@ -884,14 +897,13 @@ text-decoration: none;
    letter-spacing: 0.03em;
    color: #212121;
   margin-bottom: 12px;
-  margin-top: 20px;
+ 
 }
 .forma {
-   width: 528px;
-   min-height: 540px;
-   margin: 0 auto;
-   padding: 20px;
+   display: flex;
+    flex-direction: column;
 }
+ 
 .label {
    font-style: normal;
    font-weight: 500;
@@ -961,6 +973,7 @@ text-decoration: none;
    top: 50%;
    transform: translateY(-50%);
    left: -10px;
+   top: 37px;
    color: CurrentColor;
 }
 .form-tel {
@@ -970,13 +983,14 @@ text-decoration: none;
    top: 50%;
    transform: translateY(-50%);
    left: -35px;
+   top: 37px;
    color: CurrentColor;
 }
 .form-mail {
    position: absolute;
    width: 18px;
    height: 18px;
-   top: 40px;
+   top: 37px;
    transform: translateY(-50%);
    left: -20px;
    color: CurrentColor;
@@ -1023,7 +1037,7 @@ height: 15px;
  
 }
 .checkbox:focus + .checkbox-label::before {
-   outline: 1px solid #212121;
+   
    border-radius: 2px;
    
 }
@@ -1086,6 +1100,7 @@ display: inline-block;
    color: #2196F3;
 }
 .contact-form-submit {
+   width: 200px;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.88;
