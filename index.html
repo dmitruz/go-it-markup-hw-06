@@ -434,19 +434,19 @@
         <form class="forma" action="#" method="POST">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="close" width= "30px" height= "30px">
-                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                    <use href="./images/symbol-defs.svg#icon-close-back"></use>
                 </svg>
             </button>
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
             <label class="label"><span class="label-name">Имя</span><span class="label-wrap">
-            <input type="text"  name="name" required class="contact-form-input">
+            <input type="text" class="contact-form-input" name="user-name" pattern="[a-zA-Za-яеА-ЯЕ]" title="Имя должно содержать символы кирилици или латинского алфавита" required autofocus>
             <svg class="user" width= "18px" height="18px">
                 <use href="./images/form.svg#icon-id"></use>
            </svg>
            </span>
            </label>
             <label class="label"><span class="label-name">Телефон</span><span class="label-wrap">
-            <input class="contact-form-input" type="tel" name="user-tel" required>
+            <input class="contact-form-input" type="tel" name="user-tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             <svg class="form-tel" width= "18px" height="18px">
                 <use href="./images/form.svg#icon-phoneblack"></use>
                     </svg> 
